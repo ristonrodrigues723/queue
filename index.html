@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="q.css">
+    <title>Queue Visualization</title>
+</head>
+<body>
+    <div class="container">
+        <h3 class="title">Queue Visualizer</h3>
+        
+        <div class="container-header">
+            <div class="input-controls">
+                <input type="number" id="inputNumber" placeholder="Enter a number">
+                <button onclick="pushToQueue()">Push</button>
+                <button onclick="popFromQueue()">Pop</button>
+                <button onclick="clearQueue()">Clear Queue</button>
+            </div>
+            <div class="bob" id="queueDisplay">
+                <!-- Queue items will be displayed here -->
+            </div>
+        </div>
+        
+        <div class="container-body">
+            <div class="info-container">
+                <div class="sec1">
+                    <h3>Front of Queue:</h3>
+                    <button class="box"></button>
+                </div>
+                <div class="sec2">
+                    <h3>Last Pushed Item:</h3>
+                    <button class="box"></button>
+                </div>
+                <div class="sec3">
+                    <h3>Last Popped Item:</h3>
+                    <button class="box"></button>
+                </div>
+                <div class="sec4">
+                    <h3>Size of the Queue:</h3>
+                    <button class="box"></button>
+                </div>
+            </div>
+            
+            <div class="massage-box">
+                <h2>Message Box</h2>
+                <div class="massage"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="q.js"></script>
+</body>
+</html>
